@@ -3,6 +3,7 @@
 namespace Bank;
 
 use Bank\Enums\TransactionType;
+use Bank\Exceptions\InvalidAmountException;
 use Bank\Exceptions\InvalidTypeException;
 
 class Transaction
@@ -39,7 +40,7 @@ class Transaction
     public function setAmount(int $amount): void {
 
         if ($amount <= 0) {
-            throw new InvalidTypeException('Cannot be 0 or below');
+            throw new InvalidAmountException('Cannot be 0 or below');
         }
 
         // there could be daily transaction limit ie cant withdraw more than 300 per daily
