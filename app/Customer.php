@@ -9,6 +9,7 @@ class Customer
 {
     protected string $type; // Personal / Business
     protected string $name;
+    protected array $accounts;
 
     // address, dob, phone, email etc but its fine for now
 
@@ -20,7 +21,13 @@ class Customer
         $this->setName($name);
     }
 
-    public function setType(string $type): void {
+    public function addAccounts(Account $account)
+    {
+        $this->accounts[] = $account;
+    }
+
+    public function setType(string $type): void
+    {
         if (! in_array($type, CustomerType::all())) {
             throw new InvalidTypeException();
         }
@@ -28,11 +35,13 @@ class Customer
         $this->type = $type;
     }
 
-    public function setName(string $name): void {
+    public function setName(string $name): void
+    {
         $this->name = $name;
     }
 
-    public function getName(): string {
+    public function getName(): string
+    {
         return $this->name;
     }
 }

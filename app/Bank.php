@@ -4,15 +4,15 @@ namespace Bank;
 
 class Bank
 {
-    protected array $customerAccounts;
+    protected array $accounts;
 
     public function __construct()
     {
         //
     }
 
-    public function addCustomerAccounts(CustomerAccount $customerAccount)
+    public function addCustomerAccounts(Account $account)
     {
-        $this->customerAccounts[] = $customerAccount;
+        $this->accounts[] = $account;
     }
 }
