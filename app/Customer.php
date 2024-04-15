@@ -9,7 +9,7 @@ class Customer
 {
     protected string $type; // Personal / Business
     protected string $name;
-    protected array $accounts;
+    protected array $accounts = [];
 
     // address, dob, phone, email etc but its fine for now
 
@@ -17,13 +17,18 @@ class Customer
     {
         $this->setType($type);
 
-        // todo cant have cust with same name
         $this->setName($name);
     }
 
     public function addAccounts(Account $account)
     {
+
         $this->accounts[] = $account;
+    }
+
+    public function getAccounts(): array
+    {
+        return $this->accounts;
     }
 
     public function setType(string $type): void
