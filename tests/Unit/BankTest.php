@@ -48,7 +48,6 @@ class BankTest extends TestCase
 
         $customer = new Customer(CustomerType::Personal->name, 'Shez Azr');
 
-        // @todo cust can only have one type of each type.
         $account = new Account(AccountType::Current->name);
         $customer->addAccounts($account);
 

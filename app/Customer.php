@@ -4,6 +4,7 @@ namespace Bank;
 
 use Bank\Enums\CustomerType;
 use Bank\Exceptions\InvalidTypeException;
+use Exception;
 
 class Customer
 {
@@ -16,14 +17,18 @@ class Customer
     public function __construct(string $type, string $name)
     {
         $this->setType($type);
-
         $this->setName($name);
     }
 
-    public function addAccounts(Account $account)
+    public function addAccounts(Account $newAccount)
     {
+        foreach ($this->accounts as $account) {
+            if ($account->getType() === $newAccount->getType()) {
+                throw new Exception('Already have same account');
+            }
+        }
 
-        $this->accounts[] = $account;
+        $this->accounts[] = $newAccount;
     }
 
     public function getAccounts(): array
