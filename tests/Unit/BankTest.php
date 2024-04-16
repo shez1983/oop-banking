@@ -4,13 +4,17 @@ namespace Tests\Unit;
 
 use Bank\Account;
 use Bank\Bank;
+use Bank\CurrentAccount;
 use Bank\Customer;
 use Bank\Enums\AccountType;
 use Bank\Enums\CustomerType;
 use Bank\Enums\TransactionType;
 use Bank\Exceptions\InvalidAmountException;
 use Bank\Exceptions\InvalidTypeException;
+use Bank\SavingAccount;
+use Bank\TopupTransaction;
 use Bank\Transaction;
+use Bank\WithdrawTransaction;
 use Exception;
 use PHPUnit\Framework\TestCase;
 
@@ -48,19 +52,22 @@ class BankTest extends TestCase
 
         $customer = new Customer(CustomerType::Personal->name, 'Shez Azr');
 
-        $account = new Account(AccountType::Current->name);
+        $account = new CurrentAccount();
         $customer->addAccounts($account);
 
-        $transaction = new Transaction(TransactionType::Topup->name, 200, 'ref');
+        $transaction = new TopupTransaction(200, 'ref');
         $account->addTransaction($transaction);
+
         $this->assertEquals(200, $account->getBalance());
 
-        $transaction = new Transaction(TransactionType::Withdraw->name, -10, 'ref');
+        $transaction = new WithdrawTransaction(-10, 'ref');
         $account->addTransaction($transaction);
+
         $this->assertEquals(190, $account->getBalance());
+
         $this->assertCount(2, $account->getTransactions());
 
-        $account2 = new Account(AccountType::Saving->name);
+        $account2 = new SavingAccount();
         $customer->addAccounts($account2);
 
         // @todo how to do a transfer between accounts?
@@ -73,14 +80,14 @@ class BankTest extends TestCase
 
         $customer2 = new Customer(CustomerType::Business->name, 'Raz Khan');
 
-        $account3 = new Account(AccountType::Saving->name);
+        $account3 = new SavingAccount();
         $customer2->addAccounts($account3);
 
         $bank->addCustomer($customer2);
 
         $this->assertCount(3, $bank->getAccounts());
 
-        $account4 = new Account(AccountType::Current->name);
+        $account4 = new CurrentAccount();
         $customer2->addAccounts($account4);
         $bank->replaceCustomer($customer2);
 

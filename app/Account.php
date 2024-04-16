@@ -36,15 +36,6 @@ class Account
         return $this->type;
     }
 
-    public function setType(string $type): void
-    {
-        if (! in_array($type, AccountType::all())) {
-            throw new InvalidTypeException();
-        }
-
-        $this->type = $type;
-    }
-
     public function addTransaction(Transaction $transaction): void
     {
         $transactions = $this->transactions;

@@ -2110,3 +2110,223 @@ Stack trace:
 [stacktrace]
 #0 {main}
 "} 
+[2024-04-16 09:36:49] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 09:43:59] local.ERROR: Cannot declare class Bank\Transaction, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Transaction, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/Transaction copy.php:10)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 09:44:11] local.ERROR: Cannot declare class Bank\Transaction, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Transaction, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/Transaction copy.php:10)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 09:44:28] local.ERROR: Cannot declare class Bank\Transaction, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Transaction, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/Transaction copy.php:10)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 09:46:49] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 09:47:04] local.ERROR: Cannot declare class Bank\Transaction, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Transaction, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/Transaction copy.php:10)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 09:47:14] local.ERROR: Cannot declare class Bank\Transaction, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Transaction, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/Transaction copy.php:10)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 09:56:49] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:06:49] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:16:49] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:17:08] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/Account copy.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:17:15] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/Account.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:17:45] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/CurrentAccount.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:18:45] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/CurrentAccount.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:19:41] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/CurrentAccount.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:19:45] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/CurrentAccount.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:19:49] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/CurrentAccount.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:20:01] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/CurrentAccount.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:20:10] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/CurrentAccount.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:20:45] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/CurrentAccount.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:20:50] local.ERROR: Cannot declare class Bank\Account, because the name is already in use {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot declare class Bank\\Account, because the name is already in use at /Users/shehzad/Documents/projects/training/oop/Bank/app/CurrentAccount.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2024-04-16 10:26:49] local.ERROR: Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\View\Compilers\Compiler->__construct(Object(Illuminate\Filesystem\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\View\ViewServiceProvider->Illuminate\View\{closure}(Object(Illuminate\Foundation\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\Container\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\Container\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\Foundation\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\Container\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\Foundation\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\View...')
+#8 {main}
+  thrown {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Uncaught InvalidArgumentException: Please provide a valid cache path. in /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67
+Stack trace:
+#0 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/ViewServiceProvider.php(96): Illuminate\\View\\Compilers\\Compiler->__construct(Object(Illuminate\\Filesystem\\Filesystem), false, '', true, 'php')
+#1 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(900): Illuminate\\View\\ViewServiceProvider->Illuminate\\View\\{closure}(Object(Illuminate\\Foundation\\Application), Array)
+#2 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(787): Illuminate\\Container\\Container->build(Object(Closure))
+#3 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1026): Illuminate\\Container\\Container->resolve('blade.compiler', Array, true)
+#4 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Container/Container.php(723): Illuminate\\Foundation\\Application->resolve('blade.compiler', Array)
+#5 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1011): Illuminate\\Container\\Container->make('blade.compiler', Array)
+#6 /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(122): Illuminate\\Foundation\\Application->make('blade.compiler', Array)
+#7 Command line code(1): app('Illuminate\\\\View...')
+#8 {main}
+  thrown at /Users/shehzad/Documents/projects/training/oop/Bank/vendor/laravel/framework/src/Illuminate/View/Compilers/Compiler.php:67)
+[stacktrace]
+#0 {main}
+"} 

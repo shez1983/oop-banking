@@ -16,9 +16,8 @@ class Transaction
 
     // could add a label to group trans together ie finance, shopping etc
 
-    public function __construct(string $type, int $amount, string $reference)
+    public function __construct(int $amount, string $reference)
     {
-        $this->setType($type);
         $this->setAmount($amount);
         $this->setReference($reference);
 
@@ -35,15 +34,6 @@ class Transaction
         return $this->type;
     }
 
-    public function setType(string $type): void
-    {
-        if (! in_array($type, TransactionType::all())) {
-            throw new InvalidTypeException();
-        }
-
-        $this->type = $type;
-    }
-
     public function getAmount(): int
     {
         return $this->amount;
@@ -51,14 +41,6 @@ class Transaction
 
     public function setAmount(int $amount): void
     {
-        if ($this->type === TransactionType::Topup->name && $amount <= 0) {
-            throw new InvalidAmountException('Cannot be 0 or below');
-        }
-
-        if ($this->type === TransactionType::Withdraw->name && $amount >= 0) {
-            throw new InvalidAmountException('Cannot be 0 or above');
-        }
-
         $this->amount = $amount;
     }
 

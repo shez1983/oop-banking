@@ -30,7 +30,7 @@ class AccountTest extends TestCase
         $this->assertFalse(is_object($account));
     }
 
-    public function test_i_can_add_transaction_to_account()
+    public function test_i_can_add_topup_transaction_to_account()
     {
         $account = new Account(AccountType::Current->name);
 
@@ -38,10 +38,23 @@ class AccountTest extends TestCase
 
         $account->addTransaction($transaction);
 
-        $this->assertCount(1, $account->getTransactions());
+        $this->assertEquals(100, $account->getBalance());
     }
 
-    public function test_i_cannot_add_transaction_to_account_if_it_is_greater_than_topup_limit()
+    public function test_i_can_add_withdraw_transaction_to_account()
+    {
+        $account = new Account(AccountType::Current->name);
+
+        $transaction = new Transaction(TransactionType::Topup->name, 100, 'ref');
+        $account->addTransaction($transaction);
+
+        $transaction = new Transaction(TransactionType::Withdraw->name, -100, 'ref');
+        $account->addTransaction($transaction);
+
+        $this->assertEquals(0, $account->getBalance());
+    }
+
+    public function test_i_cannot_add_topup_transaction_to_account_if_it_is_greater_than_topup_limit()
     {
         $this->expectException(InvalidAmountException::class);
 
@@ -52,6 +65,20 @@ class AccountTest extends TestCase
         $account->addTransaction($transaction);
 
         $this->assertCount(0, $account->getTransactions());
+    }
+
+    public function test_i_cannot_add_withdraw_transaction_to_account_if_it_is_greater_than_withdraw_limit()
+    {
+        $this->expectException(InvalidAmountException::class);
+
+        $account = new Account(AccountType::Current->name, 200);
+        $transaction = new Transaction(TransactionType::Topup->name, 300, 'ref');
+        $account->addTransaction($transaction);
+
+        $transaction = new Transaction(TransactionType::Withdraw->name, -300, 'ref');
+        $account->addTransaction($transaction);
+
+        $this->assertEquals(300, $account->getBalance());
     }
 
     public function test_topup_transaction_limit_does_not_take_any_withdrawals_into_account()
@@ -72,7 +99,7 @@ class AccountTest extends TestCase
         $this->assertCount(2, $account->getTransactions());
     }
 
-    public function test_i_cannot_add_transaction_to_account_if_it_takes_you_over_topup_limit()
+    public function test_i_cannot_add_topup_transaction_to_account_if_it_takes_you_over_topup_limit()
     {
         $this->expectException(InvalidAmountException::class);
 
